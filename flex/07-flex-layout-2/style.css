@@ -50,7 +50,19 @@ ul {
   list-style: none;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px
+}
+
 .card {
+  display: flex;
+  flex-basis: 33%;
+  flex-shrink: 0;
+
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
