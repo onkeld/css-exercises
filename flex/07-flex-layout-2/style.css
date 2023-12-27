@@ -7,6 +7,7 @@ body {
 }
 
 .content {
+  display: flex;
   flex-grow: 1;
 }
 
@@ -18,7 +19,6 @@ body {
   color: white;
   font-size: 32px;
   font-weight: 900;
-  padding: 16px;
   align-items: center;
 }
 
@@ -28,13 +28,26 @@ body {
   background: #eee;
   color: darkmagenta;
   justify-content: center;
-  align-items: center;
 }
 
 .sidebar {
+  flex-shrink: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  padding-right: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
 }
 
 .card {
