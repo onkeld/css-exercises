@@ -26,6 +26,42 @@ input {
   margin-bottom: 16px;
 }
 
+.header,
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+
 .footer {
   background-color: #eeeeee;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-grow: 1;
+}
+
+li,
+ul {
+  list-style: none;
+  display: inline-block;
+  padding: 0 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.left-links {
+  align-items: flex-start;
+  margin-right: auto;
+
+}
+
+.right-links {
+  align-items: flex-end;
+  margin-left: auto;
 }
